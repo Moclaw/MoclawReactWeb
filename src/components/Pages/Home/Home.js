@@ -1,13 +1,20 @@
-import { useLocation } from "react-router";
-import Blog from "../Blogs/Blog";
-export default function Homepage() {
-  const location = useLocation();
-  console.log(location);
+import React from "react";
+import { Row, Col } from "antd";
+import Selection from "./Selection/Selection";
+const styleRow = {
+  top: 10,
+};
+
+function Home() {
   return (
     <>
-      <div className="home">
-        <Blog />
-      </div>
+      <Row style={styleRow} justify="center">
+        <Col>
+          <Selection />
+        </Col>
+      </Row>
     </>
   );
 }
+
+export default Home;

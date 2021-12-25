@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import LeftMenu from "./LeftMenu";
 import { Drawer, Button } from "antd";
-import "./index.css";
+import "./Navbar.css";
 import logo from "../../img/logo_ML_black.svg";
 
 class Navbar extends Component {
